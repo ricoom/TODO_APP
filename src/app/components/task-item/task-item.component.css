@@ -1,0 +1,17 @@
+input[type=text]{
+    border-top: 0ch;
+    border-left: 0ch;
+    border-right: 0ch;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+
+}
+input[type=text]::placeholder{
+    font-style: italic;
+    font-size: medium;
+
+}
+input[type=text]:focus{
+    outline: none;
+   
+}

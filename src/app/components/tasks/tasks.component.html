@@ -1,0 +1,10 @@
+<div class="card">
+<app-task-item (newtaskEvent)="addTask($event)"></app-task-item>
+
+<ul class="item" *ngFor="let task of todosVisisble$ | async" >
+   
+   <input type="checkbox" [(ngModel)]="task.isComplete" (change)="taskDone(task.name)" name="isComplete" id="done">
+    <li [ngStyle]="{'text-decoration':task.isComplete ? 'line-through' : 'none' }">{{task.name}}</li> 
+     <button (click)="deleteTask(task.name)">X</button>
+</ul>
+</div>
